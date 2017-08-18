@@ -1,61 +1,392 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<meta charset="utf-8" />
+		<title>切切歆语个人博客</title>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
 	</head>
-	
-	<style>
-		.cart{
-			display: flex;
-			height: 99px;
-			line-height: 99px;
-			border-top: 1px solid gainsboro;
-			border-bottom: 1px solid gainsboro;
-		}
-		
-		.cart .item1{
-			margin-left: 5px;
-		}
-		
-		.cart .item2{
-			height: 99px;
-			margin-left: 8px;
-		}
-		
-		.cart .item2 div{
-			width: 66px;
-			height: 66px;
-			margin-top: 16px;;
-			border-radius: 5px;
-			background:red;
-		}
-		.cart .item3{
-			flex: 1;
-			margin-left: 9px;
-			line-height: normal;
-			padding-top: 21px;
-			font-size: 15px;
-		}
-		
-		.cart .item4{
-			width: 55px;
-			text-align: center;
-			font-size: 18px;
-			color: #F01EF0;
-		}
-		
-		
-		
-	</style>
-	
 	<body>
-		<div class="cart">
-			<div class="item1"><input type="checkbox" /></div>
-			<div class="item2"><div>213</div></div>
-			<div class="item3">我是馋，没撒地方卡上了对方尽快</div>
-			<div class="item4">$123</div>
+		<header>
+			<div id="logo">
+				<img src="img/logo.jpg" />
+			</div>
+			<nav>
+				<ul>
+					<li><a href="resume.html" data-toggle="tooltip" data-placement="bottom" title="Home">首页</a></li>
+					<li><a href="resume.html" data-toggle="tooltip" data-placement="bottom" title="Resume">个人简历</a></li>
+					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Festival blessing">节日祝福</a></li>
+					<li><a href="my.html" data-toggle="tooltip" data-placement="bottom" title="Message">留言</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div class="main">
+			<!--图文介绍-->
+			<div class="banner">
+				<section>
+					<ul class="text">
+						<p>人生逍遥乐对，红尘千般滋味</p>
+						<p>做人好比游泳，游累了也是不能停的</p>
+					</ul>
+					<div class="avatar">
+						<a href="#">
+							<span>张切</span>
+						</a>
+					</div>
+					<div class="clear"></div>
+				</section>
+			</div>
+			
+				<!--图片介绍-->
+			<div class="template">
+				<div class="box">
+					<div class="title">
+						<h3><p><span>个人相关博客</span>&nbsp;Related blogs</p></h3>
+					</div>
+					
+					
+					<div id="flexs">
+						<div class="portfolio-sec-wrap">
+								<img class="img-responsive" src="img/n1.png" alt="" />
+								<a href="https://github.com/DickyQie" target="_blank">
+									<div class="overlay">
+										<div class="portfolio-sec-inner">
+											<h3>Github</h3>
+											<p>zhangqie</p>
+										</div>
+									</div>
+								</a>
+						</div>
+						
+						<div class="portfolio-sec-wrap">
+								<img class="img-responsive" src="img/n2.png" alt="" />
+								<a href="https://my.oschina.net/zhangqie" target="_blank">
+									<div class="overlay">
+										<div class="portfolio-sec-inner">
+											<h3>OSChain</h3>
+											<p>zhangqie</p>
+										</div>
+									</div>
+								</a>
+						</div>
+						<div class="portfolio-sec-wrap">
+								<img class="img-responsive" src="img/n3.png" alt="" />
+								<a href="https://home.cnblogs.com/u/zhangqie/" target="_blank">
+									<div class="overlay">
+										<div class="portfolio-sec-inner">
+											<h3>CNBlog</h3>
+											<p>zhangqie</p>
+										</div>
+									</div>
+								</a>
+						</div>
+						
+						<div class="portfolio-sec-wrap">
+								<img class="img-responsive" src="img/n4.png" alt="" />
+								<a href="http://my.csdn.net/dickyqie" target="_blank">
+									<div class="overlay">
+										<div class="portfolio-sec-inner">
+											<h3>CSDN</h3>
+											<p>zhangqie</p>
+										</div>
+									</div>
+								</a>
+						</div>
+						
+						<div class="portfolio-sec-wrap">
+								<img class="img-responsive" src="img/n5.png" alt="" />
+								<a href="http://zhangqie.iteye.com/" target="_blank">
+									<div class="overlay">
+										<div class="portfolio-sec-inner">
+											<h3>ITeye</h3>
+											<p>zhangqie</p>
+										</div>
+									</div>
+								</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<article>
+				
+				<h2 class="title_tj">
+					<p>经典文章<span>推荐</span></p>
+				</h2>
+				
+				<div class="bloglist_left pull-left">
+					
+					<!--blog1-->
+					
+					<h3>
+						<a href="http://zhangqie.iteye.com/">切切心语(切切歆语)</a>
+					</h3>
+					<figure>
+						<img src="img/a.jpg" />
+					</figure>
+					<ul>
+						<p>
+							博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，
+							有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补
+						</p>
+						<a title="【匆匆那些年】总结个人博客经历的这四年…" href="http://zhangqie.iteye.com/" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+					</ul>
+					
+					<p class="dateview">
+						<span>2016-11-11</span>
+						<span>作者：张切</span>
+						<span>
+							个人博客：[
+							<a href="#">心得笔记</a>
+							]
+						</span>
+					</p>
+					
+					<!--blog2-->
+					
+					<h3>
+						<a href="#">切切心语(切切歆语)</a>
+					</h3>
+					<figure>
+						<img src="img/a.jpg" />
+					</figure>
+					<ul>
+						<p>
+							博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，
+							有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补
+						</p>
+						<a title="【匆匆那些年】总结个人博客经历的这四年…" href="#" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+					</ul>
+					
+					<p class="dateview">
+						<span>2016-11-11</span>
+						<span>作者：张切</span>
+						<span>
+							个人博客：[
+							<a href="#">心得笔记</a>
+							]
+						</span>
+					</p>
+					
+					<!--blog3-->
+					<h3>
+						<a href="#">切切心语(切切歆语)</a>
+					</h3>
+					<figure>
+						<img src="img/a.jpg" />
+					</figure>
+					<ul>
+						<p>
+							博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，
+							有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补
+						</p>
+						<a title="【匆匆那些年】总结个人博客经历的这四年…" href="#" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+					</ul>
+					
+					<p class="dateview">
+						<span>2016-11-11</span>
+						<span>作者：张切</span>
+						<span>
+							个人博客：[
+							<a href="#">心得笔记</a>
+							]
+						</span>
+					</p>
+					
+					<!--blog4-->
+					<h3>
+						<a href="#">切切心语(切切歆语)</a>
+					</h3>
+					<figure>
+						<img src="img/a.jpg" />
+					</figure>
+					<ul>
+						<p>
+							博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，
+							有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补
+						</p>
+						<a title="【匆匆那些年】总结个人博客经历的这四年…" href="#" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+					</ul>
+					
+					<p class="dateview">
+						<span>2016-11-11</span>
+						<span>作者：张切</span>
+						<span>
+							个人博客：[
+							<a href="#">心得笔记</a>
+							]
+						</span>
+					</p>
+					
+					<!--blog5-->
+					<h3>
+						<a href="#">切切心语(切切歆语)</a>
+					</h3>
+					<figure>
+						<img src="img/a.jpg" />
+					</figure>
+					<ul>
+						<p>
+							博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，
+							有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补
+						</p>
+						<a title="【匆匆那些年】总结个人博客经历的这四年…" href="#" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+					</ul>
+					
+					<p class="dateview">
+						<span>2016-11-11</span>
+						<span>作者：张切</span>
+						<span>
+							个人博客：[
+							<a href="#">心得笔记</a>
+							]
+						</span>
+					</p>
+					
+					<!--blog6-->
+					<h3>
+						<a href="#">切切心语(切切歆语)</a>
+					</h3>
+					<figure>
+						<img src="img/a.jpg" />
+					</figure>
+					<ul>
+						<p>
+							博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，
+							有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补
+						</p>
+						<a title="【匆匆那些年】总结个人博客经历的这四年…" href="#" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+					</ul>
+					
+					<p class="dateview">
+						<span>2016-11-11</span>
+						<span>作者：张切</span>
+						<span>
+							个人博客：[
+							<a href="#">心得笔记</a>
+							]
+						</span>
+					</p>
+					
+				</div>
+				
+				<aside class="bloglist_right pull-right">
+					<div class="first_name">
+						<div class="content_name" >
+							<img src="img/qwewqe.png" />
+							<h3>zhang qie</h3>
+							<p>切切歆语</p>
+							<div>
+								<span>zhangqiem@126.com</span>
+							</div>
+							<div class="resume">
+								<a href="#">个人简历</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="news">
+						<h3>
+							<p>最新<span>文章</span></p>
+						</h3>
+						<ul class="rank">
+							<li>
+								<a href="http://www.jianshu.com/p/86587a30c3ce" title="高考——激情六月 " target="_blank">高考——激情六月 </a>
+							</li>
+							<li>
+								<a href="http://www.jianshu.com/p/c79c7744c71b" title="切切歆语" target="_blank">切切心语(切切歆语)</a>
+							</li>
+							<li>
+								<a href="" title="切切歆语" target="_blank">程序员最沮丧的 10 件事</a>
+							</li>
+							<li>
+								<a href="" title="切切歆语" target="_blank">有没有主宰世界的主算法？ </a>
+							</li>
+							<li>
+								<a href="" title="切切歆语" target="_blank">企业,Android,5种方式解决问题</a>
+							</li>
+							<li>
+								<a href="http://blog.csdn.net/dickyqie/article/details/52329124" title="切切歆语" target="_blank">什么才算是真正的编程能力？ </a>
+							</li>
+							
+						</ul>
+						
+						
+						<h3 class="ph">
+							<p>阅读<span>排行</span></p>
+						</h3>
+						
+						<ul class="paih">
+							<li>
+								<a href="https://mp.weixin.qq.com/s?__biz=MzA4MTU1Mzc1Mw==&tempkey=lgJRtjdC2QqPf9K2wf0h7CUaq4jHICXZUSn1V7tMXXIqtN22gOKMCTt44acpQyh1mKjvV0g%2Fs%2BvQk7z7TTRe4e%2Fpu9%2BBpPfbNbNmdj0t5oV2GoMnmGPMMo1zJjHI%2F7sy%2FkEXj59%2BGhBv44qbWNkuwg%3D%3D&chksm=1f92715028e5f8460d261ac1196159014352e149e661b050f1db2eb3c02c916aaf3bba8f1dda#rd" title="切切歆语" target="_blank">十大编程算法助程序员走上大神路 </a>
+							</li>
+							<li>
+								<a href="http://blog.csdn.net/dickyqie/article/details/70172999" title="切切歆语" target="_blank"> Android之微信图片选择功能 </a>
+							</li>
+							<li>
+								<a href="http://blog.csdn.net/dickyqie/article/details/54906742" title="切切歆语" target="_blank"> Android万年历(公历,农历,节假日) </a>
+							</li>
+							<li>
+								<a href="http://blog.csdn.net/dickyqie/article/details/54894396" title="切切歆语" target="_blank">Android之MVP模式 </a>
+							</li>
+							<li>
+								<a href="http://blog.csdn.net/dickyqie/article/details/54882106" title="切切歆语" target="_blank">Android开发之Retrofit+RxJava </a>
+							</li>
+							<li>
+								<a href="http://blog.csdn.net/dickyqie/article/details/54891006" title="切切歆语" target="_blank">Android Studio小技巧和快捷键 </a>
+							</li>
+							<li>
+								<a href="http://blog.csdn.net/dickyqie/article/details/53336527" title="切切歆语" target="_blank"> Html+JS显示地图 </a>
+							</li>
+							<li>
+								<a href="http://blog.csdn.net/dickyqie/article/details/53079462" title="切切歆语" target="_blank">Intent传值的几种方式 </a>
+							</li>
+						</ul>
+						
+						
+						<h3 class="link">
+							<p>友情<span>链接</span></p>
+						</h3>
+						
+						<ul class="website">
+							<li>
+								<a href="http://blog.csdn.net/lmj623565791/" title="切切歆语" target="_blank">鸿洋博客</a>
+							</li>
+							<li>
+								<a href="http://www.jianshu.com/u/645342ca3cad" title="切切歆语" target="_blank">code小生</a>
+							</li>
+							<li>
+								<a href="https://home.cnblogs.com/u/zhangqie/" title="切切歆语" target="_blank">切切歆语</a>
+							</li>
+							
+						</ul>
+					</div>
+					
+					
+					<div class="gzpers">
+						扫码关注
+						<span>切切歆语博客</span>
+						微信公众号
+					</div>
+					<img src="img/qrcode.jpg" class="right_qrcode" />
+				</aside>
+				<div class="clear"></div>
+			</article>
 			
 		</div>
+		
+		
+		<footer>
+				<p>Copyright © 2016 ZhangQie. <a href="#">&nbsp;All Rights Reserved</a></p>
+		</footer>
+		
+		
+		
+		
 	</body>
 </html>

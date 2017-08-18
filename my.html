@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>留言</title>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/my.css" />
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<img src="img/logo.jpg" />
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home">首页</a></li>
+					<li><a href="resume.html" data-toggle="tooltip" data-placement="bottom" title="Resume">个人简历</a></li>
+					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Festival blessing">节日祝福</a></li>
+					<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Message">留言</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="main">
+			<!--图文介绍-->
+			<div class="banner">
+				<section>
+					<ul class="text">
+						<p>人生逍遥乐对，红尘千般滋味</p>
+						<p>做人好比游泳，游累了也是不能停的</p>
+					</ul>
+					<div class="avatar">
+						<a href="#">
+							<span>张切</span>
+						</a>
+					</div>
+					<div class="clear"></div>
+				</section>
+			</div>
+			
+			<div class="message container">
+				<div class="message_content">
+					<h2>Message</h2>
+					<input type="text" class="form-control" placeholder="Name" id="username"/>
+					<input type="text" class="form-control" placeholder="Email" id="user_email"/>
+					<textarea class="form-control" rows="5" placeholder="Your Message" id="user_message"></textarea>
+					<button type="button" class="btn btn-primary btn-lg btn-block" id="btn_submit">提交</button>
+					
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		
+		<footer>
+				<p>Copyright © 2016 ZhangQie. <a href="#">&nbsp;All Rights Reserved</a></p>
+		</footer>
+		
+		<script>
+			$(function(){
+				$("#btn_submit").click(function(){
+					var username=document.getElementById("username").value;
+					var email=document.getElementById("user_email").value;
+					var message=document.getElementById("user_message").value;
+					if(username==""){
+						alert("请输入名称");
+						return;
+					}
+					if(email==""){
+						alert("请输入邮箱");
+						return;
+					}
+					var a=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.com)$/;
+					if(!a.test(email)){
+						alert("邮箱格式输入有误");
+						return;
+					}
+					
+					if(message==""){
+						alert("请输入留言信息");
+						return;
+					}
+					alert("谢谢留言！")
+					$("#username").val("");
+					$("#user_email").val("");
+					$("#user_message").val("");
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset, legend, input, button, textarea,
+p, blockquote, th, td,div{margin:0;padding:0;}
+
+
+body{
+	font-family: "微软雅黑",arial,sans-serif;
+	word-break: break-all;
+	word-wrap: break-word;
+	color: black;
+}
+footer,header{
+	display: block;
+}
+
+ul,li{list-style-type:none;}
+
+img{border:0;max-width:100%;max-height:100%;}
+
+a{text-decoration: none;border-style: none;}
+
+a:hover,a:link,a:active,a:visited{
+	text-decoration: none;
+}
+
+/*清除浮动*/
+html body div.clear,html body span .clear{
+	background: none;
+	border: 0;
+	clear: both;
+	float: none;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+

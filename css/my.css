@@ -1,0 +1,26 @@
+
+.message .message_content{
+	width: 1000px;
+	margin: auto;
+	padding-bottom: 119px;
+}
+
+.message .message_content h2{
+	margin-top:55px;
+	text-align: center;
+	color: #10A7AF;
+}
+
+.message .message_content input{
+	margin-top:35px;
+	height: 46px;
+}
+
+.message .message_content textarea{
+	margin-top:35px;
+}
+
+.message .message_content button{
+	margin-top:45px;
+}
+
